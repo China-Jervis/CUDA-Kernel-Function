@@ -7,7 +7,7 @@
 
 
 //求解变换矩阵的结构体
-struct AffiineMatrix{
+struct AffineMatrix{
 
     float i2d[6];
     float d2i[6];
@@ -51,7 +51,7 @@ struct AffiineMatrix{
 
         invertAffineTransform(i2d,d2i);
     }
-} matrix;
+};
 
 
 
@@ -101,5 +101,5 @@ void warp_affine_bilinear(
 
     AffineMatrix affine;
 
-    affine.compute(cv::Size(src_width,src_height),cv::Size(dst_width,dst_height))
+    affine.compute(cv::Size(src_width,src_height),cv::Size(dst_width,dst_height));
 }
