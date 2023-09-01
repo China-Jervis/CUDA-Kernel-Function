@@ -1,4 +1,5 @@
 #include <cuda_runtime.h>
+
 #include <affine.cuh>
 
 #include <math.h>
